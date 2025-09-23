@@ -13,24 +13,7 @@
   <meta property="og:description" content="Pick a landmark, set a radius, and instantly see nearby stays across the Philippines." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://davecube123.github.io/staynear-site/" />
-  <meta property="og:image" content="assets/img/og-image.png" />
-
-  <!-- JSON-LD Schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "MobileApplication",
-    "name": "StayNear",
-    "operatingSystem": "Android",
-    "applicationCategory": "TravelApplication",
-    "description": "Find hotels within a chosen radius of any landmark in the Philippines.",
-    "inLanguage": "en",
-    "url": "https://davecube123.github.io/staynear-site/",
-    "image": "https://davecube123.github.io/staynear-site/assets/img/og-image.png",
-    "author": {"@type": "Person", "name": "Dave Didal"},
-    "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}
-  }
-  </script>
+  <meta property="og:image" content="assets/img/screen-main.png" />
 
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="assets/css/styles.css" />
@@ -45,6 +28,8 @@
       </div>
       <div class="nav-actions">
         <a href="#features">Features</a>
+        <a href="#screens">Screenshot</a>
+        <a href="#about">About</a>
         <a href="privacy.html">Privacy</a>
         <a target="_blank" rel="noopener" href="https://github.com/davecube123/staynear-site">GitHub</a>
       </div>
@@ -53,9 +38,7 @@
     <section class="hero" role="banner">
       <h1>Hotels near any landmark<span class="accent"> — Philippines-wide</span></h1>
       <p class="sub">Pick a landmark, set a radius, and instantly see nearby stays. Clean, map-first, and built for travelers in the Philippines.</p>
-      <div class="hero-card" aria-label="App preview">
-        <img class="mock" src="assets/img/phone-mock.svg" alt="StayNear app preview" />
-      </div>
+      <p class="beta"><strong>Beta:</strong> StayNear is currently in <strong>closed beta</strong> and launching publicly on Google Play soon. Traffic will come from the mobile app and this landing page.</p>
     </section>
   </header>
 
@@ -73,9 +56,29 @@
         </article>
         <article class="card">
           <h3>PH-wide Coverage</h3>
-          <p>From El Nido to Siargao to BGC—if it’s on the map, you can search around it.</p>
+          <p>From island destinations like Siargao to city hubs like BGC—if it’s on the map, you can search around it.</p>
         </article>
       </div>
+    </section>
+
+    <section id="screens" class="container">
+      <h2>App Screenshot</h2>
+      <figure class="shot">
+        <img src="assets/img/screen-main.png" alt="StayNear landmark and radius search screen" />
+        <figcaption>Pick a landmark, set a radius, see nearby stays. (Closed beta)</figcaption>
+      </figure>
+    </section>
+
+    <section id="about" class="container about">
+      <h2>About the App</h2>
+      <ul>
+        <li><strong>Platform:</strong> Android (Kotlin, Material 3)</li>
+        <li><strong>Map:</strong> Google Maps</li>
+        <li><strong>Discovery:</strong> OpenStreetMap/Overpass (by coordinates + radius)</li>
+        <li><strong>Extra signals (optional):</strong> Google Places ratings/photos; price probes when dates are provided</li>
+        <li><strong>Monetization:</strong> Affiliate deep links (Agoda now; Klook for activities; Booking.com later)</li>
+      </ul>
+      <p>StayNear keeps the list brand-neutral. When you tap a stay, we open our partner in a secure browser tab to complete your booking.</p>
     </section>
   </main>
 
