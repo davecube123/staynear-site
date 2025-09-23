@@ -32,8 +32,22 @@ a:focus,button:focus,input:focus{outline:3px solid var(--focus);outline-offset:2
 .card{background:var(--card);border:1px solid #202a45;border-radius:var(--radius);padding:18px}
 .card h3{margin:0 0 6px}
 
-#screens .shot{background:var(--card);border:1px solid #202a45;border-radius:var(--radius);padding:10px;margin:12px 0}
-#screens .shot img{width:100%;height:auto;display:block}
+/* Smaller, centered screenshot */
+#screens .shot{
+  background:var(--card);
+  border:1px solid #202a45;
+  border-radius:var(--radius);
+  padding:10px;
+  margin:12px auto;                     /* center the figure */
+  max-width: clamp(280px, 60vw, 480px); /* cap the size */
+}
+#screens .shot img{
+  width:100%;
+  height:auto;
+  display:block;
+  border-radius:12px;                    /* optional: softer corner */
+}
+
 #screens .shot figcaption{color:#a7b3d1;font-size:14px;margin-top:6px;text-align:center}
 
 .footer{border-top:1px solid #202a45;margin-top:40px}
