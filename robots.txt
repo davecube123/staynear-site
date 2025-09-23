@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://davecube123.github.io/staynear-site/sitemap.xml
